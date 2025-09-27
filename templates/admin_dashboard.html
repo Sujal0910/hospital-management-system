@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Admin Dashboard</h1>
+<p>Welcome, {{ current_user.email }}!</p>
+<p>This is the central place to manage doctors, patients, and appointments.</p>
+<div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Total Doctors</h5>
+                <p class="card-text">Manage all doctors in the system.</p>
+                <a href="#" class="btn btn-primary">Manage Doctors</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Total Patients</h5>
+                <p class="card-text">View and manage patient records.</p>
+                <a href="#" class="btn btn-primary">Manage Patients</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Total Appointments</h5>
+                <p class="card-text">Oversee all scheduled appointments.</p>
+                <a href="#" class="btn btn-primary">Manage Appointments</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
